@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home-curriculo</title>
+
+<style>
+
+    body {
+        background-color: #0f172a;
+        color: #f8fafc;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        margin: 0;
+    }
+
+    div {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 25px;
+    }
+
+
+    fieldset {
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        background-color: #1e293b;
+        padding: 25px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s;
+    }
+
+    fieldset:hover {
+        transform: translateY(-5px);
+        border-color: #38bdf8;
+    }
+
+
+    h2 {
+        color: #38bdf8;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #818cf8;
+        margin-top: 0;
+    }
+
+    h4 {
+        font-weight: 400;
+        color: #cbd5e1;
+        text-align: justify;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        color: #94a3b8;
+    }
+
+
+    button {
+        background-color: #38bdf8;
+        color: #0f172a;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+
+    button:hover {
+        background-color: #0ea5e9;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+        transform: scale(1.05);
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<style>
+
+    body {
+
+        background-color: #0f172a;
+
+
+        background-image:
+            radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0),
+            radial-gradient(circle at 90% 10%, rgba(56, 189, 248, 0.15), transparent 40%),
+            radial-gradient(circle at 10% 90%, rgba(129, 140, 248, 0.15), transparent 40%);
+
+        background-size: 30px 30px, 100% 100%, 100% 100%;
+        background-attachment: fixed;
+
+        color: #f8fafc;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+
+    fieldset {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        background-color: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        padding: 25px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+</style>
+<body>
+<div>
+    <fieldset>
+        <h2>
+            um pouco sobre mim
+        </h2>
+        <h4>
+            Desenvolvedor Full-Stack em Formação | Python & Django
+
+Desenvolvedor apaixonado por tecnologia e resolução de problemas, com foco em arquitetura de sistemas web utilizando Python e o framework Django. Atualmente, curso graduação na área de tecnologia, onde desenvolvo projetos práticos aplicando conceitos de Programação Orientada a Objetos (POO), modelagem de dados e interfaces dinâmicas.
+
+Tenho experiência prática na criação de sistemas de gerenciamento, automação de processos (como o projeto SmartBin) e desenvolvimento de jogos com Godot. Sou movido pelo aprendizado contínuo de novas tecnologias e pela entrega de código limpo e eficiente.
+        </h4>
+    </fieldset>
+</div>
+<div>
+    <fieldset>
+        <h3>
+            meu curriculo!
+        </h3>
+        <h4>
+            aqui voce vai ver:
+        </h4>
+        <ul>
+            <li>
+                projetos feitos em django
+            </li>
+            <li>
+                rotas url
+            </li>
+            <li>
+                banco de dados com SQL
+            </li>
+            <li>
+                sistemas de classes e poo
+            </li>
+        </ul>
+    </fieldset>
+</div>
+<div>
+    <fieldset>
+        <h3>
+            barra de skils e informações
+        </h3>
+        <a href="{% url 'habilidades' %}">
+            <button>
+                habilidades
+            </button>
+        </a>
+        <a href="{% url 'github' %}">
+            <button>
+                git hub
+            </button>
+        </a>
+        <a href="{% url 'pretencao' %}">
+            <button>
+                minha descricão
+            </button>
+        </a>
+    </fieldset>
+</div>
+
+</body>
+</html>
